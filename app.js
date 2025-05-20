@@ -42,7 +42,7 @@ async function getWeatcher (city){
 cityName.innerHTML = result.name;
 humidity.innerHTML = `${ result.main.humidity}%`;
 wind.innerHTML = `${ result.wind.speed} m/s`;
-temp.innerHTML = `${ result.main.temp} °C`;
+temp.innerHTML = `${Math.floor(result.main.temp)} °C`;
 
 
 
